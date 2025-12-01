@@ -1,9 +1,0 @@
-version: '3.8'
-
-services:
-  tests:
-    build: .
-    container_name: system-io-tests-jdk17
-    volumes:
-      - ./test-results:/app/target/surefire-reports
-    command: mvn clean test
